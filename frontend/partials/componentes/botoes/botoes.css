@@ -1,0 +1,20 @@
+#alinhamento{
+  margin-top: 200px;
+  text-align: center;
+}
+.botoes {
+  text-align: center;
+  background-color: #7a1818;
+  background-color: transparent; /* tira o fundo branco */
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s, transform 0.2s;
+  
+}
+
+.botoes:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}

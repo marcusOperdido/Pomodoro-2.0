@@ -1,0 +1,134 @@
+
+/* Fundo escuro */
+.modaloculta {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 1s ease;
+}
+
+/* Ativo */
+.modal.mostrar {
+  display: flex;
+}
+
+/* Caixa principal */
+.modal-dialog {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Cabeçalho */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h5 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Botão de fechar */
+.close-botton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.close-botton:hover {
+  color: #000;
+}
+
+/* Corpo */
+.modal-body {
+  padding: 20px;
+}
+
+/* Formulário */
+.forms {
+  margin-bottom: 10px;
+}
+
+.forms label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.forms input {
+  width: 93%;
+  padding: 10px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.forms input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+
+.enter {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.enter:hover {
+  background-color: #0056b3;
+}
+.cadastro-link {
+  text-align: center;
+  margin: 10px 0 15px;
+}
+
+.cadastro-link a {
+  color: #007bff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cadastro-link a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

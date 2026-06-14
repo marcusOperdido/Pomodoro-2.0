@@ -1,0 +1,20 @@
+#cabeca {
+  height: 55px;
+  width: 100%;
+  background-color: #ebcfcf00;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#cabeca .item-esquerda {
+  margin-right: auto; 
+}
+
+#cabeca .item-direita {
+  margin-left: 10px;
+}
+
+#cabeca:hover button {
+  opacity: 1;
+  pointer-events: auto;
+}
